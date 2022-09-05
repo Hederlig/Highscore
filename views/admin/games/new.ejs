@@ -1,0 +1,56 @@
+<section class="container">
+    <h1 class="new-h1">Nytt Spel</h1>
+
+    <form method="post" class="admin-form">
+      <div class="admin-div">
+        <label for="title">Titel</label>
+        <input
+          class="new-game-input"
+          type="text"
+          name="title"
+          id="title"
+        />
+      </div>
+
+      <div class="admin-div">
+        <label for="description">Beskrivning</label>
+        <textarea
+          class="new-game-textarea"
+          name="description"
+          id="description"
+          cols="30"
+          rows="6"
+        ></textarea>
+      </div>
+
+      <div class="admin-div">
+        <label for="image_url">Bild URL</label>
+        <input class="new-game-input" type="text" name="image_url" />
+      </div>
+
+      <div class="admin-div">
+        <label for="genre">Genre</label>
+        <select class="new-game-select" name="genre" id="genre">
+          <option hidden></option>
+          <option value="action">Action</option>
+          <option value="fighting">Fighting</option>
+          <option value="maze">Maze</option>
+          <option value="platform">Platform</option>
+          <option value="puzzle">Puzzle</option>
+          <option value="racing">Racing</option>
+          <option value="shooter">Shooter</option>
+        </select>
+      </div>
+
+      <div class="admin-div">
+        <label for="release_date">Lanseringsår</label>
+        <input
+          class="new-game-select-year"
+          type="text"
+          name="release_date"
+        />
+      </div>
+
+      <button class="admin-add-btn">Lägg till</button>
+    </form>
+  </section>

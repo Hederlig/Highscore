@@ -1,0 +1,20 @@
+<section>
+  <h1 class="main-title">Highscores</h1>
+  <div class="scorebox">
+
+    <% player.forEach(player => { %>
+      <a href="/games/<%= player.url_slug %>">
+        <div class="scorebox2">
+          <div class="scorebox3">
+            <div>
+              <h1 class="game-title"><%= player.title %></h1>
+              <p class="name-date"><%= player.player_name %>, <%= player.highscore_date %></p>
+            </div>
+            <h5 class="game-score"><%= player.highscore %></h5>
+          </div>
+        </div>
+      </a>     
+    <% }) %>
+
+  </div>
+</section>

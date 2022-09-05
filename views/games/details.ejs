@@ -1,0 +1,33 @@
+<section>
+  <div class="info-box">
+    <img
+      class="game-img"
+      src="<%= games.image_url %>"
+      alt=""
+    />
+    <div class="game-info">
+      <h1 class="game-name"><%= games.title %></h1>
+      <p><%= games.release_date %>, </p>
+      <p><%= games.genre %></p>
+      <p><%= games.description %></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h1 class="main-title">Highscores</h1>
+  <div class="scorebox">
+    <% if(player[0].highscore !== null) { %>
+      <% player.forEach(({player, highscore_date, highscore }) => { %>
+        <div class="scorebox4">
+          <div class="scorebox3">
+            <p class="name-date"><%= player %>, <%= highscore_date %></p>
+            <p class="game-score"><%= highscore %></p>
+          </div>
+        </div>
+        <% }) %>
+        <% } else { %>
+        <p> No Highscore, want to be first here?</p>
+        <% } %>
+  </div>
+</section>

@@ -1,0 +1,22 @@
+<section>
+    <h1 class="search-title">Hittade <%= games.length %> träffar på "<%= searchTerm %>"</h1>
+    <div class="scorebox">
+  
+      <% games.forEach(game => { %>
+        <a href="/games/<%= game.url_slug %>">
+          <div class="scorebox2">
+              <div class="scorebox3">
+                <div>
+                  <h2 class="game-title"><%= game.title %></h2>
+                  <p class="genre-releasedate">
+                  <%= game.genre %>, <%= game.release_date %>
+                  </p>
+                </div>
+                <img class="scorebox-game-img" src="<%= game.image_url %>" alt="" />
+              </div>
+          </div>
+        </a>
+      <% }) %>
+  
+    </div>
+  </section>

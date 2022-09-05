@@ -1,0 +1,297 @@
+body {
+  height: 100vh;
+  margin: 0px;
+}
+
+header {
+  min-height: 211px;
+  font-family: Helvetica, Sans-Serif;
+}
+
+footer {
+  min-height: 40px;
+  font-family: Helvetica, Sans-Serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica, Sans-Serif;
+}
+
+footer {
+  margin-top: auto;
+}
+
+p {
+  text-decoration: none;
+  color: black;
+}
+
+.header-container {
+  background-color: rgb(236, 232, 232);
+  border-bottom: solid 2px black;
+}
+
+.header-div-img {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.header-img {
+  border: solid 1px black;
+}
+
+.header-div-input {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.header-input {
+  width: 320px;
+  border-radius: 25px;
+  height: 25px;
+  border: solid 1px black;
+}
+
+.site-footer {
+  background-color: rgb(236, 232, 232);
+  border-top: solid 2px black;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.search-title {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.scorebox2 {
+  border: 2px solid black;
+  height: 110px;
+  margin: 15px 25px 20px 25px;
+}
+
+.scorebox4 {
+  border: 2px solid black;
+  height: 55px;
+  margin: 15px 25px 20px 25px;
+}
+
+.scorebox3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.game-title {
+  margin-left: 25px;
+  color: black;
+}
+
+.game-score {
+  text-align: right;
+  margin-right: 35px;
+  color: black;
+}
+
+.name-date {
+  margin-left: 25px;
+  color: black;
+}
+
+.genre-releasedate {
+  margin-left: 25px;
+}
+
+.scorebox-game-img {
+  border: 1px solid black;
+  margin: 10px;
+  height: 90px;
+  width: 90px;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+  max-height: 320px;
+}
+
+.game-info {
+  width: 350px;
+  margin-left: 20px;
+}
+
+.game-name {
+  margin-top: 0px;
+}
+
+.game-img {
+  border: 1px solid black;
+}
+
+.container-admin-index {
+  margin: 50px 50px 50px 50px;
+}
+
+.admin-index-title-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.href-btn {
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:5px;
+	border:2px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+  height: 20px;
+  margin-top: 20px;
+  width: 60px;
+}
+
+.href-btn:hover {
+  background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+
+.admin-index-top {
+  background-color: rgb(158, 156, 156);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 4px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.container {
+  margin: 40px 40px 40px 40px;
+}
+
+.new-h1 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.new-game-input {
+  width: 40%;
+  margin-top: 15px;
+  border: 2px solid black;
+}
+
+.new-game-textarea {
+  width: 40%;
+  margin-top: 15px;
+  border: 2px solid black;
+}
+
+.new-game-select {
+  width: 16%;
+  margin-top: 15px;
+  border: 2px solid black;
+}
+
+.new-game-select-year {
+  width: 15%;
+  margin-top: 15px;
+  border: 2px solid black;
+}
+
+.admin-add-btn {
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:5px;
+	border:2px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+  height: 35px;
+  margin-top: 20px;
+  width: 100px;
+}
+
+.admin-add-btn:hover {
+  background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+
+textarea {
+  resize: none;
+}
+
+.admin-new-score {
+  width: 20%;
+  margin-top: 15px;
+  border: 2px solid black;
+}
+
+.admin-new-score-select {
+  width: 20.6%;
+  margin-top: 15px;
+  border: 2px solid black;
+}
+
+.admin-add-btn-2 {
+  background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:5px;
+	border:2px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+  height: 35px;
+  margin-top: 40px;
+  width: 100px;
+}
+
+.admin-add-btn-2:hover {
+  background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}

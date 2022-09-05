@@ -1,0 +1,30 @@
+<section class="container">
+    <h1 class="new-h1">Nytt highscore</h1>
+
+    <form method="post" class="admin-form">
+        <label for="game_id">Spel</label>
+        <select class="admin-new-score-select" name="game_id" id="game_id">
+          <option hidden></option>
+          <% games.forEach(game => { %>
+            <option value="<%= game.id %>"><%= game.title %></option>
+          <% }) %>
+        </select>
+
+      <div class="admin-div">
+        <label for="player_name">Spelare</label>
+        <input class="admin-new-score" type="text" name="player_name" id="player_name" />
+      </div>
+
+      <div class="admin-div">
+        <label for="highscore_date">Datum</label>
+        <input class="admin-new-score" type="date" name="highscore_date" id="highscore_date" />
+      </div>
+
+      <div class="admin-div">
+        <label for="highscore">Poäng</label>
+        <input class="admin-new-score" type="number" name="highscore" id="highscore" />
+      </div>
+
+      <button class="admin-add-btn-2">Lägg till</button>
+    </form>
+  </section>
